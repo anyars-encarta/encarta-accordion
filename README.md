@@ -61,7 +61,7 @@
 ### Key Features <a name="key-features"></a>
 
 > - Expand to show details on heading click.
-> - Collapse to hide displayed details on heding click
+> - Collapse to hide displayed details on heading click
 > - Enable/Disable details display for multiple headings at the same time
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
