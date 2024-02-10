@@ -1,5 +1,3 @@
-// Single Selection
-// Multiple selection
 import { useState } from "react";
 import data from "./data";
 import './styles.css';
@@ -17,7 +15,6 @@ const Accordion = () => {
       let copyMultiple = [...multiple];
       const finIndexOfCurrentId = copyMultiple.indexOf(getCurrentId)
     
-      console.log(finIndexOfCurrentId);
       if(finIndexOfCurrentId === -1) copyMultiple.push(getCurrentId)
       else copyMultiple.splice(finIndexOfCurrentId , 1)
 
