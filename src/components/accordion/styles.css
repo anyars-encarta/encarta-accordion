@@ -17,14 +17,18 @@
 }
 
 .title {
-    color: #ffff;
+    color: #ffffff;
     display: flex;
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
 }
 
+.title span:hover {
+  font-size: 30px;
+}
+
 .content {
-    color: #ffff;
+    color: #ffffff;
     height: auto;
 }
