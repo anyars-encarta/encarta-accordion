@@ -25,9 +25,14 @@ const Accordion = () => {
     <div className="wrapper">
       <button
         type="button"
+        onKeyDown={(e) => {
+          if (e.key === 'Enter') {
+            setEnableMultiSelection(!enableMultiSelection);
+          }
+        }}
         onClick={
             () => setEnableMultiSelection(!enableMultiSelection)
-}
+        }
       >
         {enableMultiSelection ? 'Multi Selection Enabled - Click to Disable' : 'Multi Selection Disabled - Click to Enable'}
       </button>
@@ -43,7 +48,18 @@ const Accordion = () => {
                               ? () => handleMultiSelection(dataItem.id)
                               : () => handleSingleSelection(dataItem.id)
                             }
+                        onKeyDown={(e) => {
+                          if (e.key === 'Enter') {
+                            if (enableMultiSelection()) {
+                              handleMultiSelection(dataItem.id);
+                            } else {
+                              handleSingleSelection(dataItem.id);
+                            }
+                          }
+                        }}
                         className="title"
+                        role="button"
+                        tabIndex="0"
                       >
                         <h3>{dataItem.question}</h3>
                         <span>+</span>
