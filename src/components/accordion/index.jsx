@@ -24,10 +24,13 @@ const Accordion = () => {
       setMultiple(copyMultiple)
     }
 
-    console.log(selected, multiple)
-
     return <div className="wrapper">
-        <button onClick={() => setEnableMultiSelection(!enableMultiSelection)}>Enable Multi Selection</button>
+        <button
+          onClick={
+            () => setEnableMultiSelection(!enableMultiSelection)}>
+                {enableMultiSelection ? 'Multi Selection Enabled - Click to Disable' : 'Multi Selection Disabled - Click to Enable'}
+        </button>
+
         <div className="accordion">
             {
                 data && data.length > 0 ?
