@@ -2,6 +2,7 @@
 // Multiple selection
 import { useState } from "react";
 import data from "./data";
+import './styles.css';
 
 const Accordion = () => {
     const [selected, setSelected] = useState(null);
