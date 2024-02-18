@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/encarta-accordion/static/css/main.dfcdbe05.css",
+    "main.js": "/encarta-accordion/static/js/main.5ed08f85.js",
+    "static/js/592.797c0523.chunk.js": "/encarta-accordion/static/js/592.797c0523.chunk.js",
+    "index.html": "/encarta-accordion/index.html",
+    "main.dfcdbe05.css.map": "/encarta-accordion/static/css/main.dfcdbe05.css.map",
+    "main.5ed08f85.js.map": "/encarta-accordion/static/js/main.5ed08f85.js.map",
+    "592.797c0523.chunk.js.map": "/encarta-accordion/static/js/592.797c0523.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dfcdbe05.css",
+    "static/js/main.5ed08f85.js"
+  ]
+}
